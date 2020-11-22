@@ -1,0 +1,144 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="header-log">
+        <a href="/">釣りログ</a>
+    </div>
+  </div>
+  <div class="contents">
+    <%= form_with model: @tweet, local: true do |f| %>
+      <div class="input-date">
+        <div class="weight-bold-text">
+        日付
+        </div>
+        <%= f.text_field :date, placeholder:"例)2020 11月16日"%>
+      </div>
+      <div class="input-tide">
+        <div class="input-tide-name">
+          <div class="weight-bold-text">
+          潮
+          </div>
+          <%= f.text_field :tide, class:"tide-name-form", placeholder:"例)中" %>
+        </div>
+        <div class="input-high-tide">
+          <div class="high-tide-moji">
+          満潮
+          </div>
+          <div class="high-tide-forms">
+            <div class="tide-time-forms">
+              <div class="tide-time-moji">
+              時間
+              </div>
+              <div class="input-high-tide-forms">
+                <div>
+                  <%= f.text_field :first_high_tide_time, class:"tide-form", placeholder:"例)12:00" %>
+                </div>
+                <div class="input-high-tide-second">
+                  <%= f.text_field :second_high_tide_time, class:"tide-form", placeholder:"例)0:00" %>
+                </div>
+              </div>
+            </div>
+            <div class="tide-depth-forms">
+              <div class="tide-depth-moji">
+              深さ
+              </div>
+              <div class="input-high-tide-forms">
+                <div>
+                  <%= f.text_field :first_high_tide_depth, class:"tide-form", placeholder:"例)140" %>
+                </div>
+                <div class="input-high-tide-second">
+                  <%= f.text_field :second_high_tide_depth, class:"tide-form", placeholder:"例)170" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-low-tide">
+          <div class="high-tide-moji">
+          干潮
+          </div>
+          <div class="high-tide-forms">
+            <div class="tide-time-forms">
+              <div class="tide-time-moji">
+              時間
+              </div>
+              <div class="input-high-tide-forms">
+                <div>
+                  <%= f.text_field :first_low_tide_time, class:"tide-form", placeholder:"例)6:00" %>
+                </div>
+                <div class="input-high-tide-second">
+                  <%= f.text_field :second_low_tide_time, class:"tide-form", placeholder:"例)18:00" %>
+                </div>
+              </div>
+            </div>
+            <div class="tide-depth-forms">
+              <div class="tide-depth-moji">
+              深さ
+              </div>
+              <div class="input-high-tide-forms">
+                <div>
+                  <%= f.text_field :first_low_tide_depth, class:"tide-form", placeholder:"例)70" %>
+                </div>
+                <div class="input-high-tide-second">
+                  <%= f.text_field :second_low_tide_depth, class:"tide-form", placeholder:"例)100" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-weather">
+        <div class=input-weather-form>
+          天気：<%= f.text_field :weather, class:"weather-form", placeholder:"例)晴れ" %>
+        </div>
+      </div>
+      <div class="input-wind">
+        <div class="input-wind-form">
+         風：<%= f.text_field :wind, class:"wind-form", placeholder:"例)弱い" %>
+        </div>
+      </div>
+      <div class="input-place">
+        <div class="input-place-form">
+         場所：<%= f.text_field :place, class:"place-form", placeholder:"例)化学工場" %>
+        </div>
+      </div>
+      <div class="input-water-condition">
+        <div class="input-water-condition-form">
+         水の状態：<%= f.text_field :water_condition, class:"water-condition-form", placeholder:"例)少し濁っている" %>
+        </div>
+      </div>
+      <div class="input-environments">
+        <div class="input-temperature">
+         気温：<%= f.text_field :temperature, class:"environment-forms", placeholder:"例)20" %>°C
+        </div>
+        <div class="input-water-temperature">
+         水温：<%= f.text_field :water_temperature, class:"environment-forms", placeholder:"例)15" %>°C
+        </div>
+        <div class="input-humidity">
+         湿度：<%= f.text_field :humidity, class:"environment-forms", placeholder:"例)56" %>%
+        </div>
+        <div class="input-barometric-pressure">
+         気圧：<%= f.text_field :barometric_pressure, class:"pressure-form", placeholder:"例)1027" %>hPa
+        </div>
+      </div>
+      <div class="click-upload">
+        <%= f.file_field :images, name: 'tweet[images][]', id: 'tweet_image' %>
+        <div id="image-list"></div>
+      </div>
+      <div class="input-fishing-results">
+        <div class="weight-bold-text">
+        釣果
+        </div>
+        <%= f.text_area :fishing_results, class:"fishing-results-form", placeholder:"例)スズキ：40cm、ルアー：ティクト、時間：11:45" %>
+      </div>
+      <div class="input-comment">
+        <div class="weight-bold-text">
+        コメント
+        </div>
+        <%= f.text_area :comment, class:"fishing-results-form", placeholder:"例)ガルバ最高" %>
+      </div>
+      <div class="tweet-submit-btn">
+        <%= f.submit "投稿する" , class:"submit-btn"%>
+      </div>
+    <% end %>
+  </div>
+</div>

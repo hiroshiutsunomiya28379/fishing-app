@@ -1,0 +1,116 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="header-log">
+        <a href="/">釣りログ</a>
+    </div>
+    <div class="header-right">
+      <div class="create-content">
+        <a href="/tweets/new">投稿する</a>
+      </div>
+      <div class="buttons">
+        <div class="button-a">
+          <%= link_to '編集する', edit_tweet_path(@tweet.id), method: :get, class: "button-a-link" %>
+        </div>
+        <div class="button-b">
+          <%= link_to '削除する', tweet_path(@tweet.id), method: :delete, class:"button-a-link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="date">
+      <%= @tweet.date %>
+    </div>
+    <div class="tide-content">
+      <div class="tide">
+        <%= @tweet.tide %>
+      </div>
+      <div class="high-tide">
+        <div class="tide-name">
+          満潮
+        </div>
+        <div class="tide-detail">
+          <div class="tide-time">
+            <div class="first-tide">
+              <%= @tweet.first_high_tide_time %>
+            </div>
+            <div class="second-tide">
+              <%= @tweet.second_high_tide_time %>
+            </div>
+          </div>
+          <div class="tide-depth">
+            <div class="first-tide">
+              <%= @tweet.first_high_tide_depth %>
+            </div>
+            <div class="second-tide">
+              <%= @tweet.second_high_tide_depth %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="low-tide">
+        <div class="tide-name">
+          干潮
+        </div>
+        <div class="tide-detail">
+          <div class="tide-time">
+            <div class="first-tide">
+              <%= @tweet.first_low_tide_time %>
+            </div>
+            <div class="second-tide">
+              <%= @tweet.second_low_tide_time %>
+            </div>
+          </div>
+          <div class="tide-depth">
+            <div class="first-tide">
+              <%= @tweet.first_low_tide_depth %>
+            </div>
+            <div class="second-tide">
+              <%= @tweet.second_low_tide_depth %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      天気：<%= @tweet.weather %>
+    </div>
+    <div class="wind">
+    風：<%= @tweet.wind %>
+    </div>
+    <div class="place">
+    場所：<%= @tweet.place %>
+    </div>
+    <div class="water-condition">
+    水の状態：<%= @tweet.water_condition %>
+    </div>
+    <div class="environment-condition">
+    気温：<%= @tweet.temperature %>°C　　水温：<%= @tweet.water_temperature %>°C　　湿度：<%= @tweet.humidity %>%　　気圧：<%= @tweet.barometric_pressure %>hPa
+    </div>
+    <div class="upload-file">
+      <% @tweet.images.each do |image| %>
+        <%= image_tag image, class: 'images' %>
+      <% end %>
+    </div>
+    <div class="results">
+      <div class="results-moji">
+       釣果
+      </div>
+      <div class="results-content">
+        <div class="results-content-moji">
+          <%= @tweet.fishing_results %>
+        <div>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="comment-moji">
+      コメント
+      </div>
+      <div class="comment-content">
+        <div class="comment-content-moji">
+          <%= @tweet.comment %>
+        </div>
+      <div>
+    </div>
+  </div>
+</div>

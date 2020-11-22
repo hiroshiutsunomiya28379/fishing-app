@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="header-log">
+        <a href="/">釣りログ</a>
+    </div>
+    <div class="create-content">
+      <a href="/tweets/new">投稿する</a>
+    </div>
+  </div>
+  <div class="contents">
+    <% @tweets.each do |tweet| %>
+      <%= link_to tweet_path(tweet), class: "tweet-link" do %>
+        <div class="content">
+          <div class="upper-content">
+            <%= tweet.date %>
+          </div>
+          <% tweet.images.each do |image| %>
+            <%= image_tag image, class: 'images' %>
+        　<% end %>
+          <div class="lower-content">
+            <%= tweet.comment %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
