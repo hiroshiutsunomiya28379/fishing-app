@@ -1,0 +1,302 @@
+.wrapper {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #253141;
+  height: 100px;
+  padding: 0 70px;
+  align-items: center;
+}
+
+.header-log a{
+  font-size: 50px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-content a{
+  font-size: 20px;
+  color: deepskyblue;
+  text-decoration: none;
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
+.buttons {
+  position: absolute;
+  top: 500px;
+}
+
+.button-a-link{
+  font-size: 20px;
+}
+
+.button-b a{
+  font-size: 20px;
+}
+
+.button-b {
+  margin-top: 10px;
+}
+
+
+
+
+.contents {
+  background-color: #ffffff;
+  height: calc(100vh - 100px);
+  padding: 46px 100px;
+  overflow: scroll;
+}
+
+.tweet-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.date {
+  margin-bottom: 30px;
+}
+
+.tide-content {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.tide {
+  margin-top: 35px;
+}
+
+.tide-name {
+  padding-left: 35px;
+}
+
+.tide-detail {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tide-time {
+  padding-right: 10px;
+}
+
+.first-tide {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second-tide {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.weather {
+  margin-top: 30px;
+}
+
+.wind {
+  margin-top: 20px;
+}
+
+.place {
+  margin-top: 20px;
+}
+
+.water-condition {
+  margin-top: 20px;
+}
+
+.environment-condition {
+  margin-top: 20px;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results-content {
+  height: 100px;
+  width: 500px;
+  border: 1px solid #333
+}
+
+.results-content-moji {
+  margin: 10px;
+}
+
+.comment {
+  margin-top: 120px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.comment-content {
+  height: 100px;
+  width: 500px;
+  border: 1px solid #333
+}
+
+.comment-content-moji {
+  margin: 10px;
+}
+
+.input-tide {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.input-tide-name {
+  margin-top: 30px;
+}
+
+input[class="tide-name-form"] {
+  width: 40px;
+}
+
+.high-tide-forms {
+  display: flex;
+}
+
+.high-tide-moji {
+  padding-left: 80px;
+}
+
+.tide-depth-forms {
+  padding-left: 30px;
+}
+
+input[class="tide-form"] {
+  width: 80px;
+}
+
+.input-high-tide-forms {
+  display: block;
+}
+
+.input-high-tide-second {
+  margin-top: 5px;
+}
+
+.tide-time-moji {
+  margin-left: 20px;
+}
+
+.tide-depth-moji {
+  margin-left: 20px;
+}
+
+.input-weather-form {
+  margin-top: 30px;
+}
+
+input[class="weather-form"] {
+  width: 60px;
+}
+
+.input-wind {
+  margin-top: 30px;
+}
+
+input[class="wind-form"] {
+  width: 60px;
+}
+
+.input-place {
+  margin-top: 30px;
+}
+
+.input-water-condition {
+  margin-top: 30px;
+}
+
+input[class="water-condition-form"] {
+  width: 200px;
+}
+
+.input-environments {
+  width: 600px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+}
+
+input[class="environment-forms"] {
+  width: 50px;
+}
+
+input[class="pressure-form"] {
+  width: 70px;
+}
+
+.input-fishing-results {
+  margin-top: 30px;
+  width: 600px;
+}
+
+.fishing-results-form {
+  width: 100%
+}
+
+.fishing-results-form {
+  height: 100px;
+}
+
+.input-comment {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 600px;
+}
+
+.tweet-submit-btn {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.click-upload {
+  margin-top: 30px;
+}
+
+.upload-file {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
