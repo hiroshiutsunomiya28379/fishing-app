@@ -118,6 +118,16 @@
   margin-top: 20px;
 }
 
+.lure-content {
+  height: 100px;
+  width: 500px;
+  border: 1px solid #333
+}
+
+.lure-content-moji {
+  margin: 10px;
+}
+
 .results {
   margin-top: 20px;
 }
@@ -133,7 +143,7 @@
 }
 
 .comment {
-  margin-top: 120px;
+  margin-top: 90px;
   height: 200px;
   margin-bottom: 40px;
 }
@@ -146,6 +156,10 @@
 
 .comment-content-moji {
   margin: 10px;
+}
+
+input[class="date-form"] {
+  width: 200px;
 }
 
 .input-tide {
@@ -219,6 +233,10 @@ input[class="wind-form"] {
   margin-top: 30px;
 }
 
+input[class="place-form"] {
+  width: 200px;
+}
+
 input[class="water-condition-form"] {
   width: 200px;
 }
@@ -236,6 +254,19 @@ input[class="environment-forms"] {
 
 input[class="pressure-form"] {
   width: 70px;
+}
+
+.input-lure {
+  margin-top: 30px;
+  width: 600px;
+}
+
+.lure-form {
+  width: 100%
+}
+
+.lure-form {
+  height: 100px;
 }
 
 .input-fishing-results {

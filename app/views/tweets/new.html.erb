@@ -10,7 +10,7 @@
         <div class="weight-bold-text">
         日付
         </div>
-        <%= f.text_field :date, placeholder:"例)2020 11月16日"%>
+        <%= f.text_field :date, class:"date-form", placeholder:"例)2020 11月16日"%>
       </div>
       <div class="input-tide">
         <div class="input-tide-name">
@@ -123,6 +123,12 @@
       <div class="click-upload">
         <%= f.file_field :images, name: 'tweet[images][]', id: 'tweet_image' %>
         <div id="image-list"></div>
+      </div>
+      <div class="input-lure">
+        <div class="weight-bold-text">
+         使用ルアー
+        </div>
+        <%= f.text_area :lure, class:"lure-form", placeholder:"例)ガルバスリム80" %>
       </div>
       <div class="input-fishing-results">
         <div class="weight-bold-text">

@@ -19,6 +19,7 @@ class CreateTweets < ActiveRecord::Migration[6.0]
       t.string :water_temperature
       t.string :humidity
       t.string :barometric_pressure
+      t.text :lure
       t.text :fishing_results
       t.text :comment
       t.timestamps

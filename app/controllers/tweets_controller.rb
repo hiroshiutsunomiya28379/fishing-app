@@ -34,6 +34,6 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:date, :tide, :first_high_tide_time, :second_high_tide_time, :first_high_tide_depth, :second_high_tide_depth, :first_low_tide_time, :second_low_tide_time, :first_low_tide_depth, :second_low_tide_depth, :weather, :wind, :place, :water_condition, :temperature, :water_temperature, :humidity, :barometric_pressure, :fishing_results, :comment, images: [])
+    params.require(:tweet).permit(:date, :tide, :first_high_tide_time, :second_high_tide_time, :first_high_tide_depth, :second_high_tide_depth, :first_low_tide_time, :second_low_tide_time, :first_low_tide_depth, :second_low_tide_depth, :weather, :wind, :place, :water_condition, :temperature, :water_temperature, :humidity, :barometric_pressure, :lure, :fishing_results, :comment, images: [])
   end
 end
