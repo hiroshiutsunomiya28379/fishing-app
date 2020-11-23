@@ -42,14 +42,22 @@
   margin-top: 10px;
 }
 
-
-
+.contents-index {
+  background-color: #ffffff;
+  height: calc(100vh - 100px);
+  padding: 46px 400px 46px 100px;
+  overflow: scroll;
+}
 
 .contents {
   background-color: #ffffff;
   height: calc(100vh - 100px);
   padding: 46px 100px;
   overflow: scroll;
+}
+
+.lower-content {
+  margin-top: 10px;
 }
 
 .tweet-link {

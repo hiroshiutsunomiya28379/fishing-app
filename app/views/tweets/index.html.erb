@@ -7,7 +7,7 @@
       <a href="/tweets/new">投稿する</a>
     </div>
   </div>
-  <div class="contents">
+  <div class="contents-index">
     <% @tweets.each do |tweet| %>
       <%= link_to tweet_path(tweet), class: "tweet-link" do %>
         <div class="content">
