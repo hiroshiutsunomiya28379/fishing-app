@@ -21,12 +21,16 @@
         </div>
         <div class="input-high-tide">
           <div class="high-tide-moji">
+          <div class="weight-bold-text">
           満潮
+          </div>
           </div>
           <div class="high-tide-forms">
             <div class="tide-time-forms">
               <div class="tide-time-moji">
+              <div class="weight-bold-text">
               時間
+              </div>
               </div>
               <div class="input-high-tide-forms">
                 <div>
@@ -39,7 +43,9 @@
             </div>
             <div class="tide-depth-forms">
               <div class="tide-depth-moji">
+              <div class="weight-bold-text">
               深さ
+              </div>
               </div>
               <div class="input-high-tide-forms">
                 <div>
@@ -54,12 +60,16 @@
         </div>
         <div class="input-low-tide">
           <div class="high-tide-moji">
+          <div class="weight-bold-text">
           干潮
+          </div>
           </div>
           <div class="high-tide-forms">
             <div class="tide-time-forms">
               <div class="tide-time-moji">
+              <div class="weight-bold-text">
               時間
+              </div>
               </div>
               <div class="input-high-tide-forms">
                 <div>
@@ -72,7 +82,9 @@
             </div>
             <div class="tide-depth-forms">
               <div class="tide-depth-moji">
+              <div class="weight-bold-text">
               深さ
+              </div>
               </div>
               <div class="input-high-tide-forms">
                 <div>
@@ -88,36 +100,68 @@
       </div>
       <div class="input-weather">
         <div class=input-weather-form>
-          天気：<%= f.text_field :weather, class:"weather-form", placeholder:"例)晴れ" %>
+        <div class="weight-bold-text">
+          天気：
+        </div>
+        <%= f.text_field :weather, class:"weather-form", placeholder:"例)晴れ" %>
         </div>
       </div>
       <div class="input-wind">
         <div class="input-wind-form">
-         風：<%= f.text_field :wind, class:"wind-form", placeholder:"例)弱い" %>
+        <div class="weight-bold-text">
+         風：
+        </div>
+        <%= f.text_field :wind, class:"wind-form", placeholder:"例)弱い" %>
         </div>
       </div>
       <div class="input-place">
         <div class="input-place-form">
-         場所：<%= f.text_field :place, class:"place-form", placeholder:"例)化学工場" %>
+        <div class="weight-bold-text">
+         場所：
+        </div>
+        <%= f.text_field :place, class:"place-form", placeholder:"例)化学工場" %>
         </div>
       </div>
       <div class="input-water-condition">
         <div class="input-water-condition-form">
-         水の状態：<%= f.text_field :water_condition, class:"water-condition-form", placeholder:"例)少し濁っている" %>
+        <div class="weight-bold-text">
+         水の状態：
+        </div>
+        <%= f.text_field :water_condition, class:"water-condition-form", placeholder:"例)少し濁っている" %>
         </div>
       </div>
       <div class="input-environments">
         <div class="input-temperature">
-         気温：<%= f.text_field :temperature, class:"environment-forms", placeholder:"例)20" %>°C
+         <div class="environments-flex">
+          <div class="weight-bold-text">
+           気温：
+          </div>
+          <%= f.text_field :temperature, class:"environment-forms", placeholder:"例)20" %><span class="tanni">°C</span>
+         </div>
         </div>
         <div class="input-water-temperature">
-         水温：<%= f.text_field :water_temperature, class:"environment-forms", placeholder:"例)15" %>°C
+         <div class="environments-flex">
+          <div class="weight-bold-text">
+           水温：
+          </div>
+          <%= f.text_field :water_temperature, class:"environment-forms", placeholder:"例)15" %><span class="tanni">°C</span>
+         </div>
         </div>
         <div class="input-humidity">
-         湿度：<%= f.text_field :humidity, class:"environment-forms", placeholder:"例)56" %>%
+         <div class="environments-flex">
+          <div class="weight-bold-text">
+           湿度：
+          </div>
+          <%= f.text_field :humidity, class:"environment-forms", placeholder:"例)56" %><span class="tanni">%</span>
+         </div>
         </div>
         <div class="input-barometric-pressure">
-         気圧：<%= f.text_field :barometric_pressure, class:"pressure-form", placeholder:"例)1027" %>hPa
+         <div class="environments-flex">
+          <div class="weight-bold-text">
+           気圧：
+          </div>
+          <%= f.text_field :barometric_pressure, class:"pressure-form", placeholder:"例)1027" %><span class="tanni">hPa</span>
+         </div>
         </div>
       </div>
       <div class="click-upload">

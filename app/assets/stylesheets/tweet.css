@@ -43,26 +43,59 @@
 }
 
 .contents-index {
-  background-color: #ffffff;
+  background-image: url("/images/seabass1000.png");
+  background-size: cover;
   height: calc(100vh - 100px);
-  padding: 46px 400px 46px 100px;
+  padding: 46px 500px 46px 100px;
   overflow: scroll;
 }
 
 .contents {
-  background-color: #ffffff;
+  background-image: url("/images/izumi.png");
+  background-size: cover;
   height: calc(100vh - 100px);
   padding: 46px 100px;
   overflow: scroll;
+  color: #fff;
+}
+
+.contents-show {
+  background-image: url("/images/seabassnote.png");
+  background-size: cover;
+  height: calc(100vh - 100px);
+  padding: 46px 500px 46px 100px;
+  overflow: scroll;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgb(221, 18, 18),
+             -2px 2px 1px rgb(223, 20, 20),
+             2px -2px 1px rgb(218, 21, 21),
+             -2px -2px 1px rgb(219, 17, 17);
+}
+
+
+.upper-content {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(236, 233, 14);
+  font-weight: 600;
+  text-shadow: 2px 2px 1px #000,
+             -2px 2px 1px #000,
+             2px -2px 1px #000,
+             -2px -2px 1px #000;
 }
 
 .lower-content {
-  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px #000,
+             -2px 2px 1px #000,
+             2px -2px 1px #000,
+             -2px -2px 1px #000;
 }
 
 .tweet-link {
   text-decoration: none;
-  color: #333;
 }
 
 .content {
@@ -75,7 +108,7 @@
 
 .tide-content {
   display: flex;
-  width: 300px;
+  width: 500px;
   justify-content: space-between;
 }
 
@@ -92,8 +125,8 @@
   margin-top: 10px;
 }
 
-.tide-time {
-  padding-right: 10px;
+.tide-depth {
+  padding-left: 25px;
 }
 
 .first-tide {
@@ -128,8 +161,8 @@
 
 .lure-content {
   height: 100px;
-  width: 500px;
-  border: 1px solid #333
+  width: 600px;
+  border: 2px solid rgb(230, 20, 13)
 }
 
 .lure-content-moji {
@@ -142,8 +175,8 @@
 
 .results-content {
   height: 100px;
-  width: 500px;
-  border: 1px solid #333
+  width: 600px;
+  border: 2px solid rgb(230, 20, 13)
 }
 
 .results-content-moji {
@@ -158,12 +191,25 @@
 
 .comment-content {
   height: 100px;
-  width: 500px;
-  border: 1px solid #333
+  width: 600px;
+  border: 2px solid rgb(230, 20, 13)
 }
 
 .comment-content-moji {
   margin: 10px;
+}
+
+.weight-bold-text {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgb(221, 18, 18),
+             -2px 2px 1px rgb(223, 20, 20),
+             2px -2px 1px rgb(218, 21, 21),
+             -2px -2px 1px rgb(219, 17, 17);
+}
+
+.environments-flex {
+  display: flex;
 }
 
 input[class="date-form"] {
@@ -218,6 +264,7 @@ input[class="tide-form"] {
 }
 
 .input-weather-form {
+  display: flex;
   margin-top: 30px;
 }
 
@@ -229,6 +276,10 @@ input[class="weather-form"] {
   margin-top: 30px;
 }
 
+.input-wind-form {
+  display: flex;
+}
+
 input[class="wind-form"] {
   width: 60px;
 }
@@ -237,8 +288,16 @@ input[class="wind-form"] {
   margin-top: 30px;
 }
 
+.input-place-form {
+  display: flex;
+}
+
 .input-water-condition {
   margin-top: 30px;
+}
+
+.input-water-condition-form {
+  display: flex;
 }
 
 input[class="place-form"] {
@@ -262,6 +321,14 @@ input[class="environment-forms"] {
 
 input[class="pressure-form"] {
   width: 70px;
+}
+
+.tanni {
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgb(221, 18, 18),
+             -2px 2px 1px rgb(223, 20, 20),
+             2px -2px 1px rgb(218, 21, 21),
+             -2px -2px 1px rgb(219, 17, 17);
 }
 
 .input-lure {
