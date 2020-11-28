@@ -43,10 +43,10 @@
 }
 
 .contents-index {
-  background-image: url("/images/seabass1000.png");
+  background-image: url("/images/seabass.png");
   background-size: cover;
   height: calc(100vh - 100px);
-  padding: 46px 500px 46px 100px;
+  padding: 46px 100px;
   overflow: scroll;
 }
 
@@ -60,17 +60,17 @@
 }
 
 .contents-show {
-  background-image: url("/images/seabassnote.png");
+  background-image: url("/images/izumi1.png");
   background-size: cover;
   height: calc(100vh - 100px);
   padding: 46px 500px 46px 100px;
   overflow: scroll;
   color: #fff;
   font-weight: 600;
-  text-shadow: 2px 2px 1px rgb(221, 18, 18),
-             -2px 2px 1px rgb(223, 20, 20),
-             2px -2px 1px rgb(218, 21, 21),
-             -2px -2px 1px rgb(219, 17, 17);
+  text-shadow: 2px 2px 1px #000,
+             -2px 2px 1px #000,
+             2px -2px 1px #000,
+             -2px -2px 1px #000;
 }
 
 
@@ -88,6 +88,7 @@
 .lower-content {
   color: #fff;
   font-weight: 600;
+  padding-right: 200px;
   text-shadow: 2px 2px 1px #000,
              -2px 2px 1px #000,
              2px -2px 1px #000,
@@ -162,7 +163,7 @@
 .lure-content {
   height: 100px;
   width: 600px;
-  border: 2px solid rgb(230, 20, 13)
+  border: 1px solid rgb(0, 0, 0)
 }
 
 .lure-content-moji {
@@ -176,7 +177,7 @@
 .results-content {
   height: 100px;
   width: 600px;
-  border: 2px solid rgb(230, 20, 13)
+  border: 1px solid rgb(0, 0, 0)
 }
 
 .results-content-moji {
@@ -192,7 +193,7 @@
 .comment-content {
   height: 100px;
   width: 600px;
-  border: 2px solid rgb(230, 20, 13)
+  border: 1px solid rgb(0, 0, 0)
 }
 
 .comment-content-moji {
